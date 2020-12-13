@@ -7,10 +7,10 @@ on:
 
 jobs:
   eints-to-git:
-    # Prevent this from running on forks
-    if: github.repository == 'OpenTTD/workflows'
     name: Eints To Git
+
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout
       uses: actions/checkout@v2
